@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CodeQuest — Learn Programming the Fun Way</title>
+  <link rel="stylesheet" href="/styles.css">
+  <meta name="description" content="실습 중심의 코딩 레슨 — HTML, CSS, JavaScript 기초부터 작은 프로젝트까지.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">CodeQuest</h1>
+      <nav>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>코딩을 놀이처럼, 한 단계씩</h2>
+      <p>기초 문법부터 작은 프로젝트까지. 실습 중심 레슨으로 바로 따라해보세요.</p>
+    </section>
+
+    <section id="lessons-section">
+      <h3>레슨 목록</h3>
+      <div id="lessons" class="cards"></div>
+    </section>
+
+    <section id="featured">
+      <h3>추천 프로젝트</h3>
+      <div class="project-card">
+        <h4>간단한 웹 계산기</h4>
+        <p>HTML, CSS, JS를 사용해 간단한 계산기를 만들어 봅니다 — 실전으로 배운 내용을 바로 확인!</p>
+        <a class="btn" href="/lesson-templates/lesson-3.html">바로 시작</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> CodeQuest — Built for publishing</small>
+    </div>
+  </footer>
+
+  <script src="/data/lessons.json" type="application/json" id="lessons-data"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
